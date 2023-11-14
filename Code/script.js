@@ -24,15 +24,37 @@ function slice(original, start, end) {
     return word;
 }
 
-console.log("DEBUG Slice")
-console.log(slice("pizza", 1, 4))
+console.log("DEBUG Slice");
+console.log(slice("pizza", 1, 4));
 
 
 
 // 3. replace( ):Replaces the first instance of a matching character in a string
+//rebuild a charAt function from scrath
+
+// let word = "Pizza"
+
+function replace(word, symbol, letter) {   
+    let newWord = "";
+    for(let a = 0; a < word.length; a++) {
+      if(charAt(word, a) === letter) {
+         word[a] = symbol 
+        return word;
+      }
+    }
+}
 
 
+function charAt(string, index) {
+   if(index >= 0 && index < string.length) {
+     return string[index]
+   } else {
+        return "";
+   }
+}
 
+console.log("DEBUG Replace");
+console.log(replace("pizza ","*", "z"));
 
 
 
@@ -67,5 +89,3 @@ console.log(slice("pizza", 1, 4))
 
 
 
-
-// trim( ): Remove
