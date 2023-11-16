@@ -114,7 +114,7 @@ console.log("DEBUG Concat")
 //variables for concat to use 
 var fristName = "Apple";
 var lastName = "Pie";
-var fullName = fristName.concat(lastName);
+var fullName = concat(fristName, lastName);
 
 //output
 console.log(fullName);
